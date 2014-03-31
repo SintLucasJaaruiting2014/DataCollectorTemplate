@@ -1,0 +1,20 @@
+$icon-font-path: "/bower_components/bootstrap-sass/vendor/assets/fonts/";
+
+// bower:scss
+@import "bootstrap-sass/vendor/assets/stylesheets/bootstrap.scss";
+// endbower
+
+.header {
+    @include make-row();
+
+    .logo {
+        img {
+            @include img-responsive();
+        }
+    }
+}
+
+.left-column,
+.right-column {
+    @include make-sm-column(6);
+}
